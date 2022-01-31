@@ -1,0 +1,25 @@
+{
+  "name": "instagram-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^14.3.0",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "node-instagram": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
