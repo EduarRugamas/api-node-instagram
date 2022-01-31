@@ -21,7 +21,7 @@ router.get('/instagram/callback', async (req, res)=> {
 
    try{
        const code = req.query.code;
-       const data = await instagram.authorizeUser(code, INSTAGRAM_URI_REDIRECT);
+       const data = await instagram.authorizeUser(code, process.env.INSTAGRAM_URI + "/instagram/callback/");
        console.log("Datos", data);
        res.json(data);
    }catch (e) {
